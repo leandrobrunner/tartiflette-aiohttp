@@ -1,3 +1,4 @@
+PKG_VERSION := $(shell cat setup.py | grep "_VERSION =" | egrep -o "([0-9]+\\.[0-9]+\\.[0-9]+)")
 
 .PHONY: init
 init:
@@ -35,6 +36,20 @@ test-functional: clean
 
 .PHONY: test
 test: test-integration test-unit test-functional
+
+.PHONY: get-version
+get-version:
+	@echo $(PKG_VERSION)
+
+.PHONY: github-action-version-and-changelog
+github-action-version-and-changelog:
+	echo $(PKG_VERSION) > $(HOME)/name
+	echo $(PKG_VERSION) > $(HOME)/tag
+	@cp changelogs/$(PKG_VERSION).md $(HOME)/changelog
+
+.PHONY: build-artifact
+build-artifact: init
+	pip install -e .[test]
 
 .PHONY: clean
 clean:
