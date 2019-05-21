@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Release]
 
+### [0.7.0] - 2019-05-21
+
+#### Changed
+
+- Bump `tartiflette` version to <0.11.0,>=0.10.0
+
 ### [0.6.3] - 2019-05-09
 
 #### Changed
