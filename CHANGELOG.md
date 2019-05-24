@@ -54,13 +54,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 #### Fixed
 
-- [ISSUE-10](https://github.com/dailymotion/tartiflette-aiohttp/issues/10): Now handle errors in the subscription generator, send an error message to the client and finish the _on_start method.
+- [ISSUE-10](https://github.com/tartiflette/tartiflette-aiohttp/issues/10): Now handle errors in the subscription generator, send an error message to the client and finish the _on_start method.
 
 ### [0.4.0] - 2019-03-04
 
 #### Changed
 
-- Move Tartiflette deps to 0.6.x branch. See [here](https://github.com/dailymotion/tartiflette/blob/master/CHANGELOG.md) for more details
+- Move Tartiflette deps to 0.6.x branch. See [here](https://github.com/tartiflette/tartiflette/blob/master/CHANGELOG.md) for more details
 
 ### [0.3.1] - 2019-02-28
 
